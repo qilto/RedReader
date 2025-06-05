@@ -212,7 +212,7 @@ public final class PrefsUtility {
 		return theme == AppearanceTheme.NIGHT
 				|| theme == AppearanceTheme.NIGHT_LOWCONTRAST
 				|| theme == AppearanceTheme.ULTRABLACK
-				|| theme == AppearanceTheme.GRUVBOX_DARK;
+				|| theme == AppearanceTheme.GRUVBOX;
 	}
 
 	public static AppearanceTheme appearance_theme() {
@@ -272,12 +272,8 @@ public final class PrefsUtility {
 				activity.setTheme(R.style.RR_Dark_UltraBlack);
 				break;
 
-			case GRUVBOX_DARK:
+			case GRUVBOX:
 				activity.setTheme(R.style.RR_Dark_Gruvbox);
-				break;
-
-			case GRUVBOX_LIGHT:
-				activity.setTheme(R.style.RR_Light_Gruvbox);
 				break;
 		}
 

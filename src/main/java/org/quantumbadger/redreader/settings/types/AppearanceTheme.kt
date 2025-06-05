@@ -80,17 +80,11 @@ enum class AppearanceTheme(
 		colorPrimary = Color(0xCC, 0xCC, 0xCC),
 		colorPrimaryDark = Color.Black
 	),
-	GRUVBOX_DARK(
-		stringValue = "gruvbox_dark",
+	GRUVBOX(
+		stringValue = "gruvbox",
 		lightness = ThemeLightness.Dark,
 		colorPrimary = Color(0xEB, 0xDB, 0xB2),
 		colorPrimaryDark = Color(0x1D, 0x20, 0x21)
-	),
-	GRUVBOX_LIGHT(
-		stringValue = "gruvbox_light",
-		lightness = ThemeLightness.Light,
-		colorPrimary = Color(0x3C, 0x38, 0x36),
-		colorPrimaryDark = Color(0xF9, 0xF5, 0xD7)
 	);
 
 	companion object {
