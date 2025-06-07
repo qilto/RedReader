@@ -50,7 +50,11 @@ class RedditTermsActivity : ViewsBaseActivity() {
 
 		super.onCreate(savedInstanceState)
 
-		window.navigationBarColor = Color.rgb(0x55, 0x55, 0x55)
+		// Use theme-appropriate navigation bar color - use the action bar color for consistency
+		val appearance = obtainStyledAttributes(intArrayOf(
+			R.attr.rrActionBarCol))
+		window.navigationBarColor = appearance.getColor(0, Color.rgb(0x55, 0x55, 0x55))
+		appearance.recycle()
 
 		setBaseActivityListing(R.layout.reddit_terms_activity)
 

@@ -47,6 +47,7 @@
 			android:scrollHorizontally="true"
 			android:singleLine="true"
 			style="@style/RR.Toolbar.TitleText"
+			android:textColor="?rrActionBarTextCol"
 			android:layout_toEndOf="@id/actionbar_title_back_image"
 			android:layout_centerVertical="true"
 			android:gravity="center_vertical"

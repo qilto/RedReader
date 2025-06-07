@@ -187,13 +187,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 				R.attr.rrCrosspostBackCol
 		});
 
-		final int boldCol;
-		if(headerMode) {
-			// Use the same score color logic for headers as for regular posts
-			boldCol = appearance.getColor(0, 255);
-		} else {
-			boldCol = appearance.getColor(0, 255);
-		}
+		final int boldCol = appearance.getColor(0, 255);
 
 		final int rrPostSubtitleUpvoteCol = appearance.getColor(1, 255);
 		final int rrPostSubtitleDownvoteCol = appearance.getColor(2, 255);

@@ -17,6 +17,7 @@
 
 package org.quantumbadger.redreader.settings;
 
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -50,7 +51,11 @@ public class SettingsActivity extends ViewsBaseActivity {
 
 		super.onCreate(savedInstanceState);
 
-		getWindow().setNavigationBarColor(Color.rgb(0x55, 0x55, 0x55));
+		// Use theme-appropriate navigation bar color - use the action bar color for consistency
+		final TypedArray appearance = obtainStyledAttributes(new int[] {
+				R.attr.rrActionBarCol});
+		getWindow().setNavigationBarColor(appearance.getColor(0, Color.rgb(0x55, 0x55, 0x55)));
+		appearance.recycle();
 
 		setBaseActivityListing(R.layout.single_fragment_layout);
 

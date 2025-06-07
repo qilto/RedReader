@@ -17,6 +17,7 @@
 
 package org.quantumbadger.redreader.activities;
 
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -36,7 +37,11 @@ public class ChangelogActivity extends ViewsBaseActivity {
 
 		super.onCreate(savedInstanceState);
 
-		getWindow().setNavigationBarColor(Color.rgb(0x55, 0x55, 0x55));
+		// Use theme-appropriate navigation bar color - use the action bar color for consistency
+		final TypedArray appearance = obtainStyledAttributes(new int[] {
+				R.attr.rrActionBarCol});
+		getWindow().setNavigationBarColor(appearance.getColor(0, Color.rgb(0x55, 0x55, 0x55)));
+		appearance.recycle();
 
 		setTitle(R.string.title_changelog);
 

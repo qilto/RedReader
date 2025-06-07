@@ -74,6 +74,7 @@
 	<attr name="rrMaterialButtonTextCol" format="color" />
 
 	<attr name="rrActionBarCol" format="color" />
+	<attr name="rrActionBarTextCol" format="color" />
 
 	<attr name="rrPostToolbarCol" format="color" />
 
