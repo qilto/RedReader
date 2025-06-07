@@ -56,10 +56,11 @@ public class LinkDetailsView extends FrameLayout {
 		layout.setGravity(Gravity.CENTER_VERTICAL);
 
 		final TypedArray appearance
-				= context.obtainStyledAttributes(new int[] {R.attr.rrIconLink});
+				= context.obtainStyledAttributes(new int[] {
+						R.attr.rrIconLink});
 		final ImageView icon = new ImageView(context);
 		icon.setImageDrawable(appearance.getDrawable(0));
-		appearance.recycle();
+		icon.setColorFilter(Color.rgb(131, 165, 152)); // Gruvbox aqua #83A598
 		layout.addView(icon);
 		((LinearLayout.LayoutParams)icon.getLayoutParams()).setMargins(
 				marginPx,
@@ -82,6 +83,7 @@ public class LinkDetailsView extends FrameLayout {
 			final TextView titleView = new TextView(context);
 			titleView.setText(title);
 			titleView.setTextSize(15f * linkFontScale);
+			titleView.setTextColor(Color.rgb(131, 165, 152)); // Gruvbox aqua #83A598
 			textLayout.addView(titleView);
 		}
 
@@ -89,14 +91,20 @@ public class LinkDetailsView extends FrameLayout {
 			final TextView subtitleView = new TextView(context);
 			subtitleView.setText(subtitle);
 			subtitleView.setTextSize(11f * linkFontScale);
+			subtitleView.setTextColor(Color.rgb(131, 165, 152)); // Gruvbox aqua #83A598
 			textLayout.addView(subtitleView);
 		}
+		
+		appearance.recycle();
 
 		final float borderPx = General.dpToPixels(context, 2);
 
 		final RectShape borderShape = new RectShape();
 		final ShapeDrawable border = new ShapeDrawable(borderShape);
-		border.getPaint().setColor(Color.argb(128, 128, 128, 128));
+		
+		// Use blue color for border
+		border.getPaint().setColor(Color.rgb(131, 165, 152)); // Gruvbox aqua #83A598
+		
 		border.getPaint().setStrokeWidth(borderPx);
 		border.getPaint().setStyle(Paint.Style.STROKE);
 
