@@ -19,6 +19,7 @@ package org.quantumbadger.redreader.fragments;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;

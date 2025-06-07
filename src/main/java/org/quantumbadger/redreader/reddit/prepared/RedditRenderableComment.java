@@ -130,33 +130,33 @@ public class RedditRenderableComment
 			pointsCol = theme.rrPostSubtitleDownvoteCol;
 
 		} else {
-			pointsCol = theme.rrCommentHeaderBoldCol;
+			pointsCol = theme.rrCommentScoreCol;
 		}
 
 		if(theme.shouldShow(PrefsUtility.AppearanceCommentHeaderItem.AUTHOR)) {
 
 			boolean setBackgroundColour = false;
-			int backgroundColour = 0; // TODO color from theme
+			int backgroundColour = 0;
 
 			if(rawComment.getAuthor().getDecoded().equalsIgnoreCase(mParentPostAuthor)
 					&& !rawComment.getAuthor().getDecoded().equals("[deleted]")) {
 
 				setBackgroundColour = true;
-				backgroundColour = Color.rgb(0, 126, 168);
+				backgroundColour = theme.rrCommentAuthorPostAuthorBackCol;
 
 			} else if("moderator".equals(rawComment.getDistinguished())) {
 				setBackgroundColour = true;
-				backgroundColour = Color.rgb(0, 170, 0);
+				backgroundColour = theme.rrCommentAuthorModeratorBackCol;
 
 			} else if("admin".equals(rawComment.getDistinguished())) {
 				setBackgroundColour = true;
-				backgroundColour = Color.rgb(170, 0, 0);
+				backgroundColour = theme.rrCommentAuthorAdminBackCol;
 
 			} else if(rawComment.getAuthor().getDecoded().equalsIgnoreCase(
 					mCurrentCanonicalUserName)) {
 				if (PrefsUtility.pref_appearance_highlight_own_username()){
 					setBackgroundColour = true;
-					backgroundColour = Color.rgb(0xEF, 0x6C, 0x00);
+					backgroundColour = theme.rrCommentAuthorOwnBackCol;
 				}
 			}
 
@@ -181,7 +181,7 @@ public class RedditRenderableComment
 			}
 			if (isBlockedUser) {
 				sb.append(" [" + context.getString(R.string.blocked_user_comment) + "]",
-				BetterSSB.FOREGROUND_COLOR, Color.RED, 0, 1f);
+				BetterSSB.FOREGROUND_COLOR, theme.rrCommentAuthorBlockedTextCol, 0, 1f);
 			}
 		}
 
@@ -286,7 +286,7 @@ public class RedditRenderableComment
 			sb.append(
 					formattedAge,
 					BetterSSB.FOREGROUND_COLOR | BetterSSB.BOLD,
-					theme.rrCommentHeaderBoldCol,
+					theme.rrCommentTimeCol,
 					0,
 					1f);
 
@@ -294,7 +294,7 @@ public class RedditRenderableComment
 				sb.append(
 						"*",
 						BetterSSB.FOREGROUND_COLOR | BetterSSB.BOLD,
-						theme.rrCommentHeaderBoldCol,
+						theme.rrCommentTimeCol,
 						0,
 						1f);
 			}

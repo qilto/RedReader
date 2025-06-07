@@ -47,6 +47,17 @@ public class RRThemeAttributes {
 	public final int rrIndentLineCol4;
 	public final int rrIndentLineCol5;
 
+	// Comment author background colors
+	public final int rrCommentAuthorPostAuthorBackCol;
+	public final int rrCommentAuthorModeratorBackCol;
+	public final int rrCommentAuthorAdminBackCol;
+	public final int rrCommentAuthorOwnBackCol;
+	public final int rrCommentAuthorBlockedTextCol;
+
+	// Comment specific colors
+	public final int rrCommentScoreCol;
+	public final int rrCommentTimeCol;
+
 	private final EnumSet<PrefsUtility.AppearanceCommentHeaderItem> mCommentHeaderItems;
 
 	public final float rrCommentFontScale;
@@ -73,7 +84,14 @@ public class RRThemeAttributes {
 				R.attr.rrIndentLineCol2,
 				R.attr.rrIndentLineCol3,
 				R.attr.rrIndentLineCol4,
-				R.attr.rrIndentLineCol5
+				R.attr.rrIndentLineCol5,
+				R.attr.rrCommentAuthorPostAuthorBackCol,
+				R.attr.rrCommentAuthorModeratorBackCol,
+				R.attr.rrCommentAuthorAdminBackCol,
+				R.attr.rrCommentAuthorOwnBackCol,
+				R.attr.rrCommentAuthorBlockedTextCol,
+				R.attr.rrCommentScoreCol,
+				R.attr.rrCommentTimeCol
 		});
 
 		rrCommentHeaderBoldCol = appearance.getColor(0, 255);
@@ -95,6 +113,13 @@ public class RRThemeAttributes {
 		rrIndentLineCol3 = appearance.getColor(16, 0xFFCD8500); // Orange fallback
 		rrIndentLineCol4 = appearance.getColor(17, 0xFFB8374A); // Red fallback
 		rrIndentLineCol5 = appearance.getColor(18, 0xFF8E6FB8); // Purple fallback
+		rrCommentAuthorPostAuthorBackCol = appearance.getColor(19, 0xFFE0E0E0);
+		rrCommentAuthorModeratorBackCol = appearance.getColor(20, 0xFFE0E0E0);
+		rrCommentAuthorAdminBackCol = appearance.getColor(21, 0xFFE0E0E0);
+		rrCommentAuthorOwnBackCol = appearance.getColor(22, 0xFFE0E0E0);
+		rrCommentAuthorBlockedTextCol = appearance.getColor(23, 0xFFE0E0E0);
+		rrCommentScoreCol = appearance.getColor(24, 255);
+		rrCommentTimeCol = appearance.getColor(25, 255);
 
 		appearance.recycle();
 

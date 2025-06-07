@@ -123,4 +123,15 @@
     <attr name="rrIndentLineCol4" format="color"/>
     <attr name="rrIndentLineCol5" format="color"/>
 
+    <!-- Comment author background colors -->
+    <attr name="rrCommentAuthorPostAuthorBackCol" format="color" />
+    <attr name="rrCommentAuthorModeratorBackCol" format="color" />
+    <attr name="rrCommentAuthorAdminBackCol" format="color" />
+    <attr name="rrCommentAuthorOwnBackCol" format="color" />
+    <attr name="rrCommentAuthorBlockedTextCol" format="color" />
+
+    <!-- Comment specific colors -->
+    <attr name="rrCommentScoreCol" format="color" />
+    <attr name="rrCommentTimeCol" format="color" />
+
 </resources>

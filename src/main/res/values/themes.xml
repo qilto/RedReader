@@ -101,11 +101,22 @@
         <!-- Comment -->
 
         <item name="rrCommentBodyCol">#DDDDDD</item>
-        <item name="rrCommentHeaderCol">#BBBBBB</item> <!-- TODO -->
+        <item name="rrCommentHeaderCol">#BBBBBB</item>
         <item name="rrCommentHeaderBoldCol">#CCCCCC</item>
-        <item name="rrCommentHeaderAuthorCol">#FFFFFF</item>
+        <item name="rrCommentHeaderAuthorCol">#BBBBBB</item>
         <item name="rrCommentSpecificThreadHeaderBackCol">#534300</item>
-        <item name="rrCommentSpecificThreadHeaderTextCol">#FFFFFF</item>
+        <item name="rrCommentSpecificThreadHeaderTextCol">#CCCCCC</item>
+        
+        <!-- Comment author background colors -->
+        <item name="rrCommentAuthorPostAuthorBackCol">#007EA8</item>
+        <item name="rrCommentAuthorModeratorBackCol">#00AA00</item>
+        <item name="rrCommentAuthorAdminBackCol">#AA0000</item>
+        <item name="rrCommentAuthorOwnBackCol">#EF6C00</item>
+        <item name="rrCommentAuthorBlockedTextCol">#FF0000</item>
+        
+        <!-- Comment specific colors -->
+        <item name="rrCommentScoreCol">#CCCCCC</item>
+        <item name="rrCommentTimeCol">#CCCCCC</item>
 
         <!-- Icons -->
 
@@ -208,6 +219,17 @@
 		<item name="rrCommentHeaderAuthorCol">#BBBBBB</item>
 		<item name="rrCommentSpecificThreadHeaderBackCol">#534300</item>
 		<item name="rrCommentSpecificThreadHeaderTextCol">#CCCCCC</item>
+		
+		<!-- Comment author background colors -->
+		<item name="rrCommentAuthorPostAuthorBackCol">#007EA8</item>
+		<item name="rrCommentAuthorModeratorBackCol">#00AA00</item>
+		<item name="rrCommentAuthorAdminBackCol">#AA0000</item>
+		<item name="rrCommentAuthorOwnBackCol">#EF6C00</item>
+		<item name="rrCommentAuthorBlockedTextCol">#FF0000</item>
+		
+		<!-- Comment specific colors -->
+		<item name="rrCommentScoreCol">#AAAAAA</item>
+		<item name="rrCommentTimeCol">#AAAAAA</item>
 
 	</style>
 
@@ -275,11 +297,22 @@
 		<!-- Comment -->
 
 		<item name="rrCommentBodyCol">#DDDDDD</item>
-		<item name="rrCommentHeaderCol">#BBBBBB</item> <!-- TODO -->
+		<item name="rrCommentHeaderCol">#BBBBBB</item>
 		<item name="rrCommentHeaderBoldCol">#CCCCCC</item>
 		<item name="rrCommentHeaderAuthorCol">#FFFFFF</item>
 		<item name="rrCommentSpecificThreadHeaderBackCol">#000000</item>
 		<item name="rrCommentSpecificThreadHeaderTextCol">#FFFFFF</item>
+
+		<!-- Comment author background colors -->
+		<item name="rrCommentAuthorPostAuthorBackCol">#007EA8</item>
+		<item name="rrCommentAuthorModeratorBackCol">#00AA00</item>
+		<item name="rrCommentAuthorAdminBackCol">#AA0000</item>
+		<item name="rrCommentAuthorOwnBackCol">#EF6C00</item>
+		<item name="rrCommentAuthorBlockedTextCol">#FF0000</item>
+		
+		<!-- Comment specific colors -->
+		<item name="rrCommentScoreCol">#CCCCCC</item>
+		<item name="rrCommentTimeCol">#CCCCCC</item>
 
 	</style>
 
@@ -369,11 +402,22 @@
         <!-- Comment -->
 
         <item name="rrCommentBodyCol">#000000</item>
-        <item name="rrCommentHeaderCol">#666666</item> <!-- TODO -->
+        <item name="rrCommentHeaderCol">#666666</item>
         <item name="rrCommentHeaderBoldCol">#333333</item>
         <item name="rrCommentHeaderAuthorCol">?colorPrimary</item>
         <item name="rrCommentSpecificThreadHeaderBackCol">#FFFFCC</item>
         <item name="rrCommentSpecificThreadHeaderTextCol">#000000</item>
+        
+        <!-- Comment author background colors -->
+        <item name="rrCommentAuthorPostAuthorBackCol">#007EA8</item>
+        <item name="rrCommentAuthorModeratorBackCol">#00AA00</item>
+        <item name="rrCommentAuthorAdminBackCol">#AA0000</item>
+        <item name="rrCommentAuthorOwnBackCol">#EF6C00</item>
+        <item name="rrCommentAuthorBlockedTextCol">#FF0000</item>
+        
+        <!-- Comment specific colors -->
+        <item name="rrCommentScoreCol">#333333</item>
+        <item name="rrCommentTimeCol">#333333</item>
 
         <!-- Post -->
 
@@ -555,6 +599,17 @@
         <item name="rrCommentHeaderAuthorCol">#FE8019</item>
         <item name="rrCommentSpecificThreadHeaderBackCol">#D79921</item>
         <item name="rrCommentSpecificThreadHeaderTextCol">#1D2021</item>
+        
+        <!-- Comment author background colors -->
+        <item name="rrCommentAuthorPostAuthorBackCol">#458588</item>
+        <item name="rrCommentAuthorModeratorBackCol">#98971A</item>
+        <item name="rrCommentAuthorAdminBackCol">#CC241D</item>
+        <item name="rrCommentAuthorOwnBackCol">#D65D0E</item>
+        <item name="rrCommentAuthorBlockedTextCol">#FB4934</item>
+        
+        <!-- Comment specific colors -->
+        <item name="rrCommentScoreCol">#B8BB26</item>
+        <item name="rrCommentTimeCol">#D3869B</item>
 
         <!-- Icons -->
 
