@@ -79,7 +79,13 @@ public class RedditPostHeaderView extends LinearLayout {
 		title.setTypeface(Fonts.getRobotoLightOrAlternative());
 		title.setText(post.src.getTitle());
 		title.setContentDescription(post.buildAccessibilityTitle(activity, true));
-		title.setTextColor(Color.WHITE);
+		
+		// Get theme-appropriate color for post title in header
+		final TypedArray titleAppearance = activity.obtainStyledAttributes(new int[] {
+				R.attr.rrPostTitleCol});
+		title.setTextColor(titleAppearance.getColor(0, Color.WHITE));
+		titleAppearance.recycle();
+		
 		greyHeader.addView(title);
 
 		final float subtitleFontScale =
@@ -90,7 +96,8 @@ public class RedditPostHeaderView extends LinearLayout {
 		subtitle.setText(post.buildSubtitle(activity, true));
 		subtitle.setContentDescription(post.buildAccessibilitySubtitle(activity, true));
 
-		subtitle.setTextColor(Color.rgb(200, 200, 200));
+		// Get theme-appropriate color for post subtitle in header - use same logic as buildSubtitle
+		subtitle.setTextColor(Color.rgb(200, 200, 200)); // This will be properly styled by buildSubtitle's SpannableString
 		greyHeader.addView(subtitle);
 
 		{

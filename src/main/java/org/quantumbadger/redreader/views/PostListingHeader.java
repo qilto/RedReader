@@ -71,13 +71,25 @@ public final class PostListingHeader extends LinearLayout {
 			title.setText(titleText);
 			title.setTextSize(22.0f);
 			title.setTypeface(Fonts.getRobotoLightOrAlternative());
-			title.setTextColor(Color.WHITE);
+			
+			// Get theme-appropriate color for subreddit header title
+			final TypedArray titleAppearance = activity.obtainStyledAttributes(new int[] {
+					R.attr.rrMainTextCol});
+			title.setTextColor(titleAppearance.getColor(0, Color.WHITE));
+			titleAppearance.recycle();
+			
 			greyHeader.addView(title);
 
 			final TextView subtitle = new TextView(activity);
 			subtitle.setTextSize(14.0f);
 			subtitle.setText(subtitleText);
-			subtitle.setTextColor(Color.rgb(200, 200, 200));
+			
+			// Get theme-appropriate color for subreddit header subtitle
+			final TypedArray subtitleAppearance = activity.obtainStyledAttributes(new int[] {
+					R.attr.rrSubTextCol});
+			subtitle.setTextColor(subtitleAppearance.getColor(0, Color.rgb(200, 200, 200)));
+			subtitleAppearance.recycle();
+			
 			greyHeader.addView(subtitle);
 
 			addView(greyHeader);
