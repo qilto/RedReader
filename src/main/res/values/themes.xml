@@ -325,11 +325,11 @@
 		<item name="rrQuickLinkButtonColForeground">#EBDBB2</item>
 		<item name="rrQuickLinkButtonColForegroundDisabled">#A89984</item>
 		<item name="rrQuickLinkButtonColForegroundPressed">#FBF1C7</item>
-		<item name="rrPostTitleCol">#8EC07C</item>
+		<item name="rrPostTitleCol">#FABD2F</item>
 		<item name="rrPostTitleReadCol">#A89984</item>
 		<item name="rrPostSubtitleCol">#D5C4A1</item>
-		<item name="rrPostSubtitleBoldCol">#FABD2F</item>
-		<item name="rrPostSubtitleUpvoteCol">#FB4934</item>
+		<item name="rrPostSubtitleBoldCol">#B8BB26</item>
+		<item name="rrPostSubtitleUpvoteCol">#8EC07C</item>
 		<item name="rrPostSubtitleDownvoteCol">#83A598</item>
 		<item name="rrPostSubtitleAuthorCol">#A89984</item>
 		<item name="rrPostSubtitleSubredditCol">#FE8019</item>
