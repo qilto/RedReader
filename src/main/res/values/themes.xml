@@ -108,6 +108,10 @@
         <item name="rrCommentHeaderCol">#BBBBBB</item> <!-- TODO -->
         <item name="rrCommentHeaderBoldCol">#CCCCCC</item>
         <item name="rrCommentHeaderAuthorCol">#FFFFFF</item>
+        <item name="rrCommentHeaderScoreCol">#DDDDDD</item>
+        <item name="rrCommentHeaderAgeCol">#BBBBBB</item>
+        <item name="rrCommentHeaderSubredditCol">#CCCCCC</item>
+        <item name="rrCommentHeaderControversialityCol">#FF9B76</item>
         <item name="rrCommentSpecificThreadHeaderBackCol">#534300</item>
         <item name="rrCommentSpecificThreadHeaderTextCol">#FFFFFF</item>
 
@@ -214,6 +218,10 @@
 		<item name="rrCommentHeaderCol">#999999</item>
 		<item name="rrCommentHeaderBoldCol">#AAAAAA</item>
 		<item name="rrCommentHeaderAuthorCol">#BBBBBB</item>
+		<item name="rrCommentHeaderScoreCol">#AAAAAA</item>
+		<item name="rrCommentHeaderAgeCol">#999999</item>
+		<item name="rrCommentHeaderSubredditCol">#BBBBBB</item>
+		<item name="rrCommentHeaderControversialityCol">#FF9B76</item>
 		<item name="rrCommentSpecificThreadHeaderBackCol">#534300</item>
 		<item name="rrCommentSpecificThreadHeaderTextCol">#CCCCCC</item>
 
@@ -290,6 +298,10 @@
 		<item name="rrCommentHeaderCol">#BBBBBB</item> <!-- TODO -->
 		<item name="rrCommentHeaderBoldCol">#CCCCCC</item>
 		<item name="rrCommentHeaderAuthorCol">#FFFFFF</item>
+		<item name="rrCommentHeaderScoreCol">#DDDDDD</item>
+		<item name="rrCommentHeaderAgeCol">#BBBBBB</item>
+		<item name="rrCommentHeaderSubredditCol">#CCCCCC</item>
+		<item name="rrCommentHeaderControversialityCol">#FF9B76</item>
 		<item name="rrCommentSpecificThreadHeaderBackCol">#000000</item>
 		<item name="rrCommentSpecificThreadHeaderTextCol">#FFFFFF</item>
 
@@ -351,7 +363,11 @@
 		<item name="rrCommentBodyCol">#EBDBB2</item>
 		<item name="rrCommentHeaderCol">#D5C4A1</item>
 		<item name="rrCommentHeaderBoldCol">#FBF1C7</item>
-		<item name="rrCommentHeaderAuthorCol">#FE8019</item>
+		<item name="rrCommentHeaderAuthorCol">#A89984</item>
+		<item name="rrCommentHeaderScoreCol">#B8BB26</item>
+		<item name="rrCommentHeaderAgeCol">#83A598</item>
+		<item name="rrCommentHeaderSubredditCol">#FE8019</item>
+		<item name="rrCommentHeaderControversialityCol">#FB4934</item>
 		<item name="rrCommentSpecificThreadHeaderBackCol">#B57614</item>
 		<item name="rrCommentSpecificThreadHeaderTextCol">#EBDBB2</item>
 		
@@ -454,6 +470,10 @@
         <item name="rrCommentHeaderCol">#666666</item> <!-- TODO -->
         <item name="rrCommentHeaderBoldCol">#333333</item>
         <item name="rrCommentHeaderAuthorCol">?colorPrimary</item>
+        <item name="rrCommentHeaderScoreCol">#444444</item>
+        <item name="rrCommentHeaderAgeCol">#666666</item>
+        <item name="rrCommentHeaderSubredditCol">#333333</item>
+        <item name="rrCommentHeaderControversialityCol">#FF6600</item>
         <item name="rrCommentSpecificThreadHeaderBackCol">#FFFFCC</item>
         <item name="rrCommentSpecificThreadHeaderTextCol">#000000</item>
 

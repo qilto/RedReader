@@ -130,7 +130,7 @@ public class RedditRenderableComment
 			pointsCol = theme.rrPostSubtitleDownvoteCol;
 
 		} else {
-			pointsCol = theme.rrCommentHeaderBoldCol;
+			pointsCol = theme.rrCommentHeaderScoreCol;
 		}
 
 		if(theme.shouldShow(PrefsUtility.AppearanceCommentHeaderItem.AUTHOR)) {
@@ -245,7 +245,7 @@ public class RedditRenderableComment
 				sb.append(
 						context.getString(R.string.props_controversial_symbol),
 						BetterSSB.FOREGROUND_COLOR | BetterSSB.BOLD | BetterSSB.SUPERSCRIPT,
-						theme.rrCommentHeaderBoldCol,
+						theme.rrCommentHeaderControversialityCol,
 						0,
 						1f);
 			}
@@ -286,7 +286,7 @@ public class RedditRenderableComment
 			sb.append(
 					formattedAge,
 					BetterSSB.FOREGROUND_COLOR | BetterSSB.BOLD,
-					theme.rrCommentHeaderBoldCol,
+					theme.rrCommentHeaderAgeCol,
 					0,
 					1f);
 
@@ -294,7 +294,7 @@ public class RedditRenderableComment
 				sb.append(
 						"*",
 						BetterSSB.FOREGROUND_COLOR | BetterSSB.BOLD,
-						theme.rrCommentHeaderBoldCol,
+						theme.rrCommentHeaderAgeCol,
 						0,
 						1f);
 			}
@@ -309,7 +309,7 @@ public class RedditRenderableComment
 			sb.append(
 					mComment.getRawComment().getSubreddit().getDecoded(), // TODO null
 					BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-					theme.rrCommentHeaderBoldCol,
+					theme.rrCommentHeaderSubredditCol,
 					0,
 					1f);
 		}

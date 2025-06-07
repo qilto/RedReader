@@ -28,6 +28,10 @@ public class RRThemeAttributes {
 
 	public final int rrCommentHeaderBoldCol;
 	public final int rrCommentHeaderAuthorCol;
+	public final int rrCommentHeaderScoreCol;
+	public final int rrCommentHeaderAgeCol;
+	public final int rrCommentHeaderSubredditCol;
+	public final int rrCommentHeaderControversialityCol;
 	public final int rrPostSubtitleUpvoteCol;
 	public final int rrPostSubtitleDownvoteCol;
 	public final int rrPostSubtitleAuthorCol;
@@ -61,6 +65,10 @@ public class RRThemeAttributes {
 		final TypedArray appearance = context.obtainStyledAttributes(new int[] {
 				R.attr.rrCommentHeaderBoldCol,
 				R.attr.rrCommentHeaderAuthorCol,
+				R.attr.rrCommentHeaderScoreCol,
+				R.attr.rrCommentHeaderAgeCol,
+				R.attr.rrCommentHeaderSubredditCol,
+				R.attr.rrCommentHeaderControversialityCol,
 				R.attr.rrPostSubtitleUpvoteCol,
 				R.attr.rrPostSubtitleDownvoteCol,
 				R.attr.rrPostSubtitleAuthorCol,
@@ -86,27 +94,31 @@ public class RRThemeAttributes {
 
 		rrCommentHeaderBoldCol = appearance.getColor(0, 255);
 		rrCommentHeaderAuthorCol = appearance.getColor(1, 255);
-		rrPostSubtitleUpvoteCol = appearance.getColor(2, 255);
-		rrPostSubtitleDownvoteCol = appearance.getColor(3, 255);
-		rrPostSubtitleAuthorCol = appearance.getColor(4, 255);
-		rrPostSubtitleSubredditCol = appearance.getColor(5, 255);
-		rrPostSubtitleAgeCol = appearance.getColor(6, 255);
-		rrPostSubtitleCommentsCol = appearance.getColor(7, 255);
-		rrFlairBackCol = appearance.getColor(8, 0);
-		rrFlairTextCol = appearance.getColor(9, 255);
-		rrGoldBackCol = appearance.getColor(10, 0);
-		rrGoldTextCol = appearance.getColor(11, 255);
-		rrCommentHeaderCol = appearance.getColor(12, 255);
-		rrCommentBodyCol = appearance.getColor(13, 255);
-		rrMainTextCol = appearance.getColor(14, 255);
-		colorAccent = appearance.getColor(15, 255);
-		rrCrosspostBackCol = appearance.getColor(16, 255);
-		rrCrosspostTextCol = appearance.getColor(17, 255);
-		rrIndentLineCol1 = appearance.getColor(18, 0xFF6B8AC7); // Blue fallback
-		rrIndentLineCol2 = appearance.getColor(19, 0xFF5FA05F); // Green fallback
-		rrIndentLineCol3 = appearance.getColor(20, 0xFFCD8500); // Orange fallback
-		rrIndentLineCol4 = appearance.getColor(21, 0xFFB8374A); // Red fallback
-		rrIndentLineCol5 = appearance.getColor(22, 0xFF8E6FB8); // Purple fallback
+		rrCommentHeaderScoreCol = appearance.getColor(2, 255);
+		rrCommentHeaderAgeCol = appearance.getColor(3, 255);
+		rrCommentHeaderSubredditCol = appearance.getColor(4, 255);
+		rrCommentHeaderControversialityCol = appearance.getColor(5, 255);
+		rrPostSubtitleUpvoteCol = appearance.getColor(6, 255);
+		rrPostSubtitleDownvoteCol = appearance.getColor(7, 255);
+		rrPostSubtitleAuthorCol = appearance.getColor(8, 255);
+		rrPostSubtitleSubredditCol = appearance.getColor(9, 255);
+		rrPostSubtitleAgeCol = appearance.getColor(10, 255);
+		rrPostSubtitleCommentsCol = appearance.getColor(11, 255);
+		rrFlairBackCol = appearance.getColor(12, 0);
+		rrFlairTextCol = appearance.getColor(13, 255);
+		rrGoldBackCol = appearance.getColor(14, 0);
+		rrGoldTextCol = appearance.getColor(15, 255);
+		rrCommentHeaderCol = appearance.getColor(16, 255);
+		rrCommentBodyCol = appearance.getColor(17, 255);
+		rrMainTextCol = appearance.getColor(18, 255);
+		colorAccent = appearance.getColor(19, 255);
+		rrCrosspostBackCol = appearance.getColor(20, 255);
+		rrCrosspostTextCol = appearance.getColor(21, 255);
+		rrIndentLineCol1 = appearance.getColor(22, 0xFF6B8AC7); // Blue fallback
+		rrIndentLineCol2 = appearance.getColor(23, 0xFF5FA05F); // Green fallback
+		rrIndentLineCol3 = appearance.getColor(24, 0xFFCD8500); // Orange fallback
+		rrIndentLineCol4 = appearance.getColor(25, 0xFFB8374A); // Red fallback
+		rrIndentLineCol5 = appearance.getColor(26, 0xFF8E6FB8); // Purple fallback
 
 		appearance.recycle();
 
