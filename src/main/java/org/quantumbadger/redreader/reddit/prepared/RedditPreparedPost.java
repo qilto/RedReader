@@ -175,6 +175,10 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 				R.attr.rrPostSubtitleBoldCol,
 				R.attr.rrPostSubtitleUpvoteCol,
 				R.attr.rrPostSubtitleDownvoteCol,
+				R.attr.rrPostSubtitleAuthorCol,
+				R.attr.rrPostSubtitleSubredditCol,
+				R.attr.rrPostSubtitleAgeCol,
+				R.attr.rrPostSubtitleCommentsCol,
 				R.attr.rrFlairBackCol,
 				R.attr.rrFlairTextCol,
 				R.attr.rrGoldTextCol,
@@ -192,12 +196,16 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 
 		final int rrPostSubtitleUpvoteCol = appearance.getColor(1, 255);
 		final int rrPostSubtitleDownvoteCol = appearance.getColor(2, 255);
-		final int rrFlairBackCol = appearance.getColor(3, 255);
-		final int rrFlairTextCol = appearance.getColor(4, 255);
-		final int rrGoldTextCol = appearance.getColor(5, 255);
-		final int rrGoldBackCol = appearance.getColor(6, 255);
-		final int rrCrosspostTextCol = appearance.getColor(7, 255);
-		final int rrCrosspostBackCol = appearance.getColor(8, 255);
+		final int rrPostSubtitleAuthorCol = appearance.getColor(3, 255);
+		final int rrPostSubtitleSubredditCol = appearance.getColor(4, 255);
+		final int rrPostSubtitleAgeCol = appearance.getColor(5, 255);
+		final int rrPostSubtitleCommentsCol = appearance.getColor(6, 255);
+		final int rrFlairBackCol = appearance.getColor(7, 255);
+		final int rrFlairTextCol = appearance.getColor(8, 255);
+		final int rrGoldTextCol = appearance.getColor(9, 255);
+		final int rrGoldBackCol = appearance.getColor(10, 255);
+		final int rrCrosspostTextCol = appearance.getColor(11, 255);
+		final int rrCrosspostBackCol = appearance.getColor(12, 255);
 
 		appearance.recycle();
 
@@ -294,7 +302,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 			postListDescSb.append(
 					String.valueOf(src.getCommentCount()),
 					BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-					boldCol,
+					rrPostSubtitleCommentsCol,
 					0,
 					1f);
 			postListDescSb.append(
@@ -319,7 +327,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 			postListDescSb.append(
 					src.getUpvotePercentage() + "%",
 					BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-					boldCol,
+					rrPostSubtitleCommentsCol,
 					0,
 					1f);
 			postListDescSb.append(
@@ -356,7 +364,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 							R.string.time_ago,
 							mPostAgeUnits),
 					BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-					boldCol,
+					rrPostSubtitleAgeCol,
 					0,
 					1f);
 			postListDescSb.append(" ", 0);
@@ -392,7 +400,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 				postListDescSb.append(
 						src.getAuthor(),
 						BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-						boldCol,
+						rrPostSubtitleAuthorCol,
 						0,
 						1f);
 			}
@@ -406,7 +414,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 				postListDescSb.append(
 						src.getSubreddit(),
 						BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-						boldCol,
+						rrPostSubtitleSubredditCol,
 						0,
 						1f);
 				postListDescSb.append(" ", 0);

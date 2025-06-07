@@ -45,6 +45,10 @@
     <attr name="rrPostSubtitleBoldCol" format="color" />
     <attr name="rrPostSubtitleUpvoteCol" format="color" />
     <attr name="rrPostSubtitleDownvoteCol" format="color" />
+    <attr name="rrPostSubtitleAuthorCol" format="color" />
+    <attr name="rrPostSubtitleSubredditCol" format="color" />
+    <attr name="rrPostSubtitleAgeCol" format="color" />
+    <attr name="rrPostSubtitleCommentsCol" format="color" />
     <attr name="rrPostCommentsButtonBackCol" format="color" />
     <attr name="rrPostCommentsButtonTextCol" format="color" />
     <attr name="rrPostThumbnailBackground" format="color" />
