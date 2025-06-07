@@ -270,6 +270,14 @@ public final class PrefsUtility {
 			case ULTRABLACK:
 				activity.setTheme(R.style.RR_Dark_UltraBlack);
 				break;
+
+			case GRUVBOX_DARK:
+				activity.setTheme(R.style.RR_Dark_Gruvbox);
+				break;
+
+			case GRUVBOX_LIGHT:
+				activity.setTheme(R.style.RR_Light_Gruvbox);
+				break;
 		}
 
 		applyLanguage(activity);
