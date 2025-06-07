@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Copyright (C) 2014 The Android Open Source Project
 
@@ -17,9 +18,8 @@ Copyright (C) 2014 The Android Open Source Project
 		android:width="24dp"
 		android:height="24dp"
 		android:viewportWidth="24"
-		android:viewportHeight="24" >
-
+		android:viewportHeight="24">
 	<path
-		android:fillColor="#FFFFFFFF"
-		android:pathData="M18.0,4.0l-6.0,8.5L6.0,4.0L18.0,4.0zM6.0,13.0l12.0,0.0l-6.0,8.5L6.0,13.0z"/>
+		android:fillColor="?rrActionBarTextCol"
+		android:pathData="M7.41,8.59L12,13.17l4.59,-4.58L18,10l-6,6 -6,-6z"/>
 </vector>

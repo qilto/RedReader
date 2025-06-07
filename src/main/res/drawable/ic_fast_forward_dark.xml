@@ -20,6 +20,6 @@ Copyright (C) 2014 The Android Open Source Project
 		android:viewportHeight="24" >
 
 	<path
-		android:fillColor="#FFFFFFFF"
+		android:fillColor="?rrActionBarTextCol"
 		android:pathData="M4.0,18.0l8.5,-6.0L4.0,6.0L4.0,18.0zM13.0,6.0l0.0,12.0l8.5,-6.0L13.0,6.0z"/>
 </vector>

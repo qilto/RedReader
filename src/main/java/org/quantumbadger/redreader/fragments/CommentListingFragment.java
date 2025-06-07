@@ -19,6 +19,7 @@ package org.quantumbadger.redreader.fragments;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -226,6 +227,7 @@ public class CommentListingFragment extends RRFragment
 						buttonVPadding,
 						buttonHPadding,
 						buttonVPadding);
+				// Use theme-appropriate navigation icon - keep up direction
 				previousButton.setImageResource(R.drawable.ic_ff_up_dark);
 				previousButton.setContentDescription(
 						getString(R.string.button_prev_comment_parent));
@@ -253,6 +255,7 @@ public class CommentListingFragment extends RRFragment
 						buttonVPadding,
 						buttonHPadding,
 						buttonVPadding);
+				// Use theme-appropriate navigation icon - keep down direction
 				nextButton.setImageResource(R.drawable.ic_ff_down_dark);
 				nextButton.setContentDescription(getString(R.string.button_next_comment_parent));
 				mFloatingToolbar.addView(nextButton);
