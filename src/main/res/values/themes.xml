@@ -343,7 +343,7 @@
 		<item name="rrQuickLinkButtonColForeground">#EBDBB2</item>
 		<item name="rrQuickLinkButtonColForegroundDisabled">#A89984</item>
 		<item name="rrQuickLinkButtonColForegroundPressed">#FBF1C7</item>
-		<item name="rrPostTitleCol">#FABD2F</item>
+		<item name="rrPostTitleCol">#FBF1C7</item>
 		<item name="rrPostTitleReadCol">#A89984</item>
 		<item name="rrPostSubtitleCol">#D5C4A1</item>
 		<item name="rrPostSubtitleBoldCol">#B8BB26</item>
