@@ -477,7 +477,7 @@
         <item name="colorPrimaryDark">#1D2021</item>
         <item name="colorOnPrimary">#1D2021</item>
 
-        <item name="colorAccent">#83A598</item>
+        <item name="colorAccent">#8EC07C</item>
 
         <item name="rrActionBarCol">#3C3836</item>
 
@@ -499,13 +499,13 @@
         <item name="rrIndentLineCol">#3C3836</item>
 
         <item name="rrListDividerCol">#504945</item>
-        <item name="rrListHeaderTextCol">#EBDBB2</item>
-        <item name="rrListHeaderLineCol">#665C54</item>
+        <item name="rrListHeaderTextCol">#FABD2F</item>
+        <item name="rrListHeaderLineCol">#D79921</item>
         <item name="rrListSubtitleCol">#A89984</item>
 
-        <item name="rrAnnouncementBorderCol">#928374</item>
+        <item name="rrAnnouncementBorderCol">#D3869B</item>
 
-        <item name="rrLoadingRingForegroundCol">#EBDBB2</item>
+        <item name="rrLoadingRingForegroundCol">#8EC07C</item>
         <item name="rrLoadingRingBackgroundCol">#3C3836</item>
 
         <item name="alertDialogTheme">@style/RR.Dark.Dialog.Alert</item>
@@ -518,9 +518,9 @@
         <item name="rrQuickLinkButtonColDisabled">#3C3836</item>
         <item name="rrQuickLinkButtonColPressed">#665C54</item>
 
-        <item name="rrQuickLinkButtonColForeground">#EBDBB2</item>
-        <item name="rrQuickLinkButtonColForegroundDisabled">#928374</item>
-        <item name="rrQuickLinkButtonColForegroundPressed">#EBDBB2</item>
+        <item name="rrQuickLinkButtonColForeground">#B8BB26</item>
+        <item name="rrQuickLinkButtonColForegroundDisabled">#7C6F64</item>
+        <item name="rrQuickLinkButtonColForegroundPressed">#FABD2F</item>
 
         <!-- Post -->
 
@@ -529,18 +529,18 @@
         <item name="rrPostSubtitleCol">#A89984</item>
         <item name="rrPostSubtitleBoldCol">#D5C4A1</item>
         <item name="rrPostSubtitleUpvoteCol">#FB4934</item>
-        <item name="rrPostSubtitleDownvoteCol">#458588</item>
+        <item name="rrPostSubtitleDownvoteCol">#83A598</item>
         <item name="rrPostCommentsButtonBackCol">#504945</item>
         <item name="rrPostCommentsButtonHighlightCol">#665C54</item>
-        <item name="rrPostCommentsButtonTextCol">#EBDBB2</item>
+        <item name="rrPostCommentsButtonTextCol">#8EC07C</item>
         <item name="rrPostThumbnailBackground">#282828</item>
         <item name="rrPostInlinePreviewDivider">#3C3836</item>
-        <item name="rrPostFlingTextCol">#EBDBB2</item>
-        <item name="rrFlairBackCol">#3C3836</item>
-        <item name="rrFlairTextCol">#A89984</item>
-        <item name="rrGoldBackCol">#D79921</item>
+        <item name="rrPostFlingTextCol">#FABD2F</item>
+        <item name="rrFlairBackCol">#665C54</item>
+        <item name="rrFlairTextCol">#D3869B</item>
+        <item name="rrGoldBackCol">#FABD2F</item>
         <item name="rrGoldTextCol">#1D2021</item>
-        <item name="rrCrosspostBackCol">#458588</item>
+        <item name="rrCrosspostBackCol">#689D6A</item>
         <item name="rrCrosspostTextCol">#EBDBB2</item>
 
         <item name="rrPostToolbarCol">#32302F</item>
@@ -550,11 +550,11 @@
         <!-- Comment -->
 
         <item name="rrCommentBodyCol">#EBDBB2</item>
-        <item name="rrCommentHeaderCol">#A89984</item>
+        <item name="rrCommentHeaderCol">#BDAE93</item>
         <item name="rrCommentHeaderBoldCol">#D5C4A1</item>
-        <item name="rrCommentHeaderAuthorCol">#EBDBB2</item>
-        <item name="rrCommentSpecificThreadHeaderBackCol">#B57614</item>
-        <item name="rrCommentSpecificThreadHeaderTextCol">#EBDBB2</item>
+        <item name="rrCommentHeaderAuthorCol">#FE8019</item>
+        <item name="rrCommentSpecificThreadHeaderBackCol">#D79921</item>
+        <item name="rrCommentSpecificThreadHeaderTextCol">#1D2021</item>
 
         <!-- Icons -->
 
@@ -589,141 +589,6 @@
         <item name="rrIconMagnify">@drawable/magnify_dark</item>
         <item name="rrIconAccountSearch">@drawable/account_search_dark</item>
         
-    </style>
-
-    <style name="RR.Light.Gruvbox" parent="Theme.Material3.Light.NoActionBar">
-
-        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
-
-        <item name="android:actionOverflowButtonStyle">@style/RR.Base.Widget.AppCompat.ActionButton.Overflow</item>
-
-        <item name="colorPrimary">#3C3836</item>
-        <item name="colorPrimaryDark">#282828</item>
-        <item name="colorOnPrimary">#FBF1C7</item>
-        <item name="colorAccent">#076678</item>
-        <item name="rrActionBarCol">#3C3836</item>
-
-        <item name="elevationOverlayEnabled">false</item>
-        <item name="colorSurface">#FBF1C7</item>
-        <item name="colorSurfaceBright">#FBF1C7</item>
-        <item name="colorSurfaceContainer">#FBF1C7</item>
-        <item name="colorSurfaceContainerHigh">#FBF1C7</item>
-        <item name="colorSurfaceContainerHighest">#FBF1C7</item>
-        <item name="colorSurfaceContainerLow">#FBF1C7</item>
-        <item name="colorSurfaceContainerLowest">#FBF1C7</item>
-        <item name="colorSurfaceDim">#FBF1C7</item>
-        <item name="colorSurfaceVariant">#F2E5BC</item>
-        <item name="colorBackgroundFloating">#FBF1C7</item>
-
-        <item name="rrPostListHeaderBackgroundCol">#3C3836</item>
-
-        <item name="rrMainTextCol">#3C3836</item>
-        <item name="rrSubTextCol">#665C54</item>
-        <item name="rrMaterialButtonTextCol">#3C3836</item>
-
-        <item name="android:textColorPrimary">#3C3836</item>
-        <item name="android:textColorSecondary">#3C3836</item>
-
-        <item name="rrLoadingRingForegroundCol">#3C3836</item>
-        <item name="rrLoadingRingBackgroundCol">#EBDBB2</item>
-
-        <item name="rrIndentBackgroundCol">#F9F5D7</item>
-        <item name="rrIndentLineCol">#EBDBB2</item>
-
-        <item name="android:windowBackground">@color/lightWindowBackground</item>
-
-        <item name="rrListItemBackgroundCol">#FBF1C7</item>
-        <item name="rrListItemBackgroundHighlightCol">#EBDBB2</item>
-        <item name="rrListBackgroundCol">#F9F5D7</item>
-
-        <item name="alertDialogTheme">@style/RR.Dark.Dialog.Alert</item>
-        <item name="materialAlertDialogTheme">@style/RR.MaterialOverlay.Dialog.Alert</item>
-        <item name="rrActionBarPopupThemeStyle">@style/ThemeOverlay.Material3.Light</item>
-
-        <item name="rrListDividerCol">#D5C4A1</item>
-        <item name="rrListHeaderTextCol">#076678</item>
-        <item name="rrListHeaderLineCol">#076678</item>
-        <item name="rrListSubtitleCol">#665C54</item>
-
-        <item name="rrAnnouncementBorderCol">#928374</item>
-
-        <item name="actionBarSize">48dp</item>
-
-        <item name="rrQuickLinkButtonCol">#EBDBB2</item>
-        <item name="rrQuickLinkButtonColDisabled">#EBDBB2</item>
-        <item name="rrQuickLinkButtonColPressed">#D5C4A1</item>
-
-        <item name="rrQuickLinkButtonColForeground">#3C3836</item>
-        <item name="rrQuickLinkButtonColForegroundDisabled">#928374</item>
-        <item name="rrQuickLinkButtonColForegroundPressed">#3C3836</item>
-
-        <!-- Comment -->
-
-        <item name="rrCommentBodyCol">#3C3836</item>
-        <item name="rrCommentHeaderCol">#665C54</item>
-        <item name="rrCommentHeaderBoldCol">#504945</item>
-        <item name="rrCommentHeaderAuthorCol">#3C3836</item>
-        <item name="rrCommentSpecificThreadHeaderBackCol">#FABD2F</item>
-        <item name="rrCommentSpecificThreadHeaderTextCol">#3C3836</item>
-
-        <!-- Post -->
-
-        <item name="rrPostTitleCol">#3C3836</item>
-        <item name="rrPostTitleReadCol">#928374</item>
-        <item name="rrPostSubtitleCol">#665C54</item>
-        <item name="rrPostSubtitleBoldCol">#504945</item>
-        <item name="rrPostSubtitleUpvoteCol">#CC241D</item>
-        <item name="rrPostSubtitleDownvoteCol">#076678</item>
-        <item name="rrPostCommentsButtonBackCol">#EBDBB2</item>
-        <item name="rrPostCommentsButtonHighlightCol">#D5C4A1</item>
-        <item name="rrPostCommentsButtonTextCol">#3C3836</item>
-        <item name="rrPostThumbnailBackground">#EBDBB2</item>
-        <item name="rrPostInlinePreviewDivider">#D5C4A1</item>
-        <item name="rrPostFlingTextCol">#3C3836</item>
-        <item name="rrFlairBackCol">#D5C4A1</item>
-        <item name="rrFlairTextCol">#504945</item>
-        <item name="rrGoldBackCol">#FABD2F</item>
-        <item name="rrGoldTextCol">#3C3836</item>
-        <item name="rrCrosspostBackCol">#076678</item>
-        <item name="rrCrosspostTextCol">#FBF1C7</item>
-
-        <item name="rrPostToolbarCol">#F2E5BC</item>
-
-        <item name="rrThemedButtonSelector">@drawable/rr_themed_button_selector_light</item>
-
-        <!-- Icons -->
-
-        <item name="rrIconComments">@drawable/ic_action_comments_light</item>
-        <item name="rrIconPerson">@drawable/ic_action_person_light</item>
-        <item name="rrIconAdd">@drawable/ic_action_add_light</item>
-        <item name="rrIconCross">@drawable/ic_action_cross_light</item>
-        <item name="rrIconEnvOpen">@drawable/ic_action_env_open_light</item>
-        <item name="rrIconSentMessages">@drawable/ic_action_sent_messages_light</item>
-        <item name="rrIconInfo">@drawable/ic_action_info_light</item>
-        <item name="rrIconRefresh">@drawable/ic_refresh_light</item>
-        <item name="rrIconReply">@drawable/ic_action_reply_light</item>
-        <item name="rrIconSend">@drawable/ic_action_send_light</item>
-        <item name="rrIconShare">@drawable/ic_action_share_light</item>
-        <item name="rrIconSort">@drawable/ic_sort_light</item>
-        <item name="rrIconStarFilled">@drawable/star_light</item>
-        <item name="rrIconFfLeft">@drawable/ic_fast_rewind_light</item>
-        <item name="rrIconFfRight">@drawable/ic_fast_forward_light</item>
-        <item name="rrIconTick">@drawable/ic_action_tick_light</item>
-        <item name="rrIconLink">@drawable/ic_action_link_light</item>
-        <item name="rrIconTime">@drawable/ic_time_light</item>
-        <item name="rrIconForward">@drawable/ic_action_forward_light</item>
-        <item name="rrIconOverflow">@drawable/dots_vertical_light</item>
-        <item name="rrIconArrowUpSmall">@drawable/arrow_up_small_light</item>
-        <item name="rrIconArrowUpBold">@drawable/arrow_up_bold_light</item>
-        <item name="rrIconArrowDownBold">@drawable/arrow_down_bold_light</item>
-        <item name="rrIconStarFilledOff">@drawable/star_off_light</item>
-        <item name="rrIconPin">@drawable/pin_light</item>
-        <item name="rrIconPinOff">@drawable/pin_off_light</item>
-        <item name="rrIconMessagePlus">@drawable/message_plus_light</item>
-        <item name="rrIconChevronRight">@drawable/chevron_right_light</item>
-        <item name="rrIconMagnify">@drawable/magnify_light</item>
-        <item name="rrIconAccountSearch">@drawable/account_search_light</item>
-
     </style>
 
 </resources>
