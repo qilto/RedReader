@@ -48,6 +48,7 @@
 				android:layout_height="match_parent"
 				android:src="@drawable/ic_action_back_dark"
 				android:scaleType="fitCenter"
+				android:tint="?rrActionBarTextCol"
 				tools:ignore="ContentDescription"/>
 
 	</FrameLayout>

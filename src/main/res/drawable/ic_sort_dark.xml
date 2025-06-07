@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
         android:width="24dp"
         android:height="24dp"
-        android:viewportHeight="24.0"
-        android:viewportWidth="24.0">
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
     <path
-        android:fillColor="#FFFFFFFF"
-        android:pathData="M3,18h6v-2L3,16v2zM3,6v2h18L21,6L3,6zM3,13h12v-2L3,11v2z"/>
+        android:fillColor="?rrActionBarTextCol"
+        android:pathData="M18,21L14,17H17V7H14L18,3L22,7H19V17H22M2,19V17H12V19H2M2,13V11H9V13H2M2,7V5H6V7H2Z"/>
 </vector>

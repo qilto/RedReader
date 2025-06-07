@@ -19,6 +19,7 @@ package org.quantumbadger.redreader.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.graphics.Rect;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -259,12 +260,17 @@ public final class OptionsMenuUtility {
 
 			if(postsVisible && commentsVisible) {
 				if(getOrThrow(appbarItemsPrefs, AppbarItemsPref.SORT) != DO_NOT_SHOW) {
-					final SubMenu sortMenu = menu.addSubMenu(
-							Menu.NONE,
-							AppbarItemsPref.SORT.ordinal(),
-							Menu.NONE,
-							R.string.options_sort);
-					sortMenu.getItem().setIcon(R.drawable.ic_sort_dark);
+									final SubMenu sortMenu = menu.addSubMenu(
+						Menu.NONE,
+						AppbarItemsPref.SORT.ordinal(),
+						Menu.NONE,
+						R.string.options_sort);
+				
+				// Use theme-appropriate sort icon
+				final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+						R.attr.rrIconSort});
+				sortMenu.getItem().setIcon(appearance.getResourceId(0, R.drawable.ic_sort_dark));
+				appearance.recycle();
 					sortMenu.getItem()
 							.setShowAsAction(handleShowAsActionIfRoom(getOrThrow(
 									appbarItemsPrefs,
@@ -316,7 +322,12 @@ public final class OptionsMenuUtility {
 						AppbarItemsPref.REFRESH.ordinal(),
 						Menu.NONE,
 						R.string.options_refresh);
-				refreshMenu.getItem().setIcon(R.drawable.ic_refresh_dark);
+				
+				// Use theme-appropriate refresh icon
+				final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+						R.attr.rrIconRefresh});
+				refreshMenu.getItem().setIcon(appearance.getResourceId(0, R.drawable.ic_refresh_dark));
+				appearance.recycle();
 				refreshMenu.getItem()
 						.setShowAsAction(handleShowAsActionIfRoom(getOrThrow(
 								appbarItemsPrefs,
@@ -340,7 +351,12 @@ public final class OptionsMenuUtility {
 							AppbarItemsPref.PAST.ordinal(),
 							Menu.NONE,
 							R.string.options_past);
-					pastMenu.getItem().setIcon(R.drawable.ic_time_dark);
+					
+					// Use theme-appropriate time icon
+					final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+							R.attr.rrIconTime});
+					pastMenu.getItem().setIcon(appearance.getResourceId(0, R.drawable.ic_time_dark));
+					appearance.recycle();
 					pastMenu.getItem()
 							.setShowAsAction(handleShowAsActionIfRoom(getOrThrow(
 									appbarItemsPrefs,
@@ -358,7 +374,12 @@ public final class OptionsMenuUtility {
 							AppbarItemsPref.SEARCH.ordinal(),
 							1,
 							R.string.action_search);
-					searchMenu.getItem().setIcon(R.drawable.ic_search_dark);
+					
+					// Use theme-appropriate search icon
+					final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+							R.attr.rrIconMagnify});
+					searchMenu.getItem().setIcon(appearance.getResourceId(0, R.drawable.ic_search_dark));
+					appearance.recycle();
 					searchMenu.getItem()
 							.setShowAsAction(handleShowAsActionIfRoom(getOrThrow(
 									appbarItemsPrefs,
@@ -727,7 +748,11 @@ public final class OptionsMenuUtility {
 
 				refreshSubreddits.setShowAsAction(showAsAction);
 				if(!longText) {
-					refreshSubreddits.setIcon(R.drawable.ic_refresh_dark);
+					// Use theme-appropriate refresh icon
+					final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+							R.attr.rrIconRefresh});
+					refreshSubreddits.setIcon(appearance.getResourceId(0, R.drawable.ic_refresh_dark));
+					appearance.recycle();
 				}
 
 				break;
@@ -745,7 +770,11 @@ public final class OptionsMenuUtility {
 
 				refreshPosts.setShowAsAction(showAsAction);
 				if(!longText) {
-					refreshPosts.setIcon(R.drawable.ic_refresh_dark);
+					// Use theme-appropriate refresh icon
+					final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+							R.attr.rrIconRefresh});
+					refreshPosts.setIcon(appearance.getResourceId(0, R.drawable.ic_refresh_dark));
+					appearance.recycle();
 				}
 
 				break;
@@ -762,7 +791,12 @@ public final class OptionsMenuUtility {
 						});
 
 				submitPost.setShowAsAction(showAsAction);
-				submitPost.setIcon(R.drawable.ic_action_send_dark);
+				
+				// Use theme-appropriate send icon
+				final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+						R.attr.rrIconSend});
+				submitPost.setIcon(appearance.getResourceId(0, R.drawable.ic_action_send_dark));
+				appearance.recycle();
 
 				break;
 			}
@@ -788,7 +822,11 @@ public final class OptionsMenuUtility {
 
 				search.setShowAsAction(showAsAction);
 				if(!longText) {
-					search.setIcon(R.drawable.ic_search_dark);
+					// Use theme-appropriate search icon
+					final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+							R.attr.rrIconMagnify});
+					search.setIcon(appearance.getResourceId(0, R.drawable.ic_search_dark));
+					appearance.recycle();
 				}
 
 				break;
@@ -810,7 +848,11 @@ public final class OptionsMenuUtility {
 
 				searchComments.setShowAsAction(showAsAction);
 				if(!longText) {
-					searchComments.setIcon(R.drawable.ic_search_dark);
+					// Use theme-appropriate search icon
+					final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+							R.attr.rrIconMagnify});
+					searchComments.setIcon(appearance.getResourceId(0, R.drawable.ic_search_dark));
+					appearance.recycle();
 				}
 
 				break;
@@ -829,7 +871,11 @@ public final class OptionsMenuUtility {
 
 				refreshComments.setShowAsAction(showAsAction);
 				if(!longText) {
-					refreshComments.setIcon(R.drawable.ic_refresh_dark);
+					// Use theme-appropriate refresh icon
+					final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+							R.attr.rrIconRefresh});
+					refreshComments.setIcon(appearance.getResourceId(0, R.drawable.ic_refresh_dark));
+					appearance.recycle();
 				}
 
 				break;
@@ -847,7 +893,12 @@ public final class OptionsMenuUtility {
 
 				if(showAsAction != MenuItem.SHOW_AS_ACTION_NEVER) {
 					pastPosts.setShowAsAction(showAsAction);
-					pastPosts.setIcon(R.drawable.ic_time_dark);
+					
+					// Use theme-appropriate time icon
+					final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+							R.attr.rrIconTime});
+					pastPosts.setIcon(appearance.getResourceId(0, R.drawable.ic_time_dark));
+					appearance.recycle();
 				}
 
 				break;
@@ -866,7 +917,12 @@ public final class OptionsMenuUtility {
 
 				if(showAsAction != MenuItem.SHOW_AS_ACTION_NEVER) {
 					pastComments.setShowAsAction(showAsAction);
-					pastComments.setIcon(R.drawable.ic_time_dark);
+					
+					// Use theme-appropriate time icon
+					final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+							R.attr.rrIconTime});
+					pastComments.setIcon(appearance.getResourceId(0, R.drawable.ic_time_dark));
+					appearance.recycle();
 				}
 
 				break;
