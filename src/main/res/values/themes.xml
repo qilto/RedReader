@@ -117,6 +117,10 @@
         <!-- Comment specific colors -->
         <item name="rrCommentScoreCol">#CCCCCC</item>
         <item name="rrCommentTimeCol">#CCCCCC</item>
+        
+        <!-- Load more comments colors -->
+        <item name="rrLoadMoreCommentsTextCol">#CCCCCC</item>
+        <item name="rrLoadMoreCommentsArrowCol">#CCCCCC</item>
 
         <!-- Icons -->
 
@@ -230,6 +234,10 @@
 		<!-- Comment specific colors -->
 		<item name="rrCommentScoreCol">#AAAAAA</item>
 		<item name="rrCommentTimeCol">#AAAAAA</item>
+		
+		<!-- Load more comments colors -->
+		<item name="rrLoadMoreCommentsTextCol">#AAAAAA</item>
+		<item name="rrLoadMoreCommentsArrowCol">#AAAAAA</item>
 
 	</style>
 
@@ -313,6 +321,10 @@
 		<!-- Comment specific colors -->
 		<item name="rrCommentScoreCol">#CCCCCC</item>
 		<item name="rrCommentTimeCol">#CCCCCC</item>
+		
+		<!-- Load more comments colors -->
+		<item name="rrLoadMoreCommentsTextCol">#CCCCCC</item>
+		<item name="rrLoadMoreCommentsArrowCol">#CCCCCC</item>
 
 	</style>
 
@@ -418,6 +430,10 @@
         <!-- Comment specific colors -->
         <item name="rrCommentScoreCol">#333333</item>
         <item name="rrCommentTimeCol">#333333</item>
+        
+        <!-- Load more comments colors -->
+        <item name="rrLoadMoreCommentsTextCol">#333333</item>
+        <item name="rrLoadMoreCommentsArrowCol">#333333</item>
 
         <!-- Post -->
 
@@ -610,6 +626,10 @@
         <!-- Comment specific colors -->
         <item name="rrCommentScoreCol">#B8BB26</item>
         <item name="rrCommentTimeCol">#D3869B</item>
+        
+        <!-- Load more comments colors -->
+        <item name="rrLoadMoreCommentsTextCol">#FABD2F</item>
+        <item name="rrLoadMoreCommentsArrowCol">#FE8019</item>
 
         <!-- Icons -->
 

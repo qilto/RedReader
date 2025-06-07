@@ -133,5 +133,9 @@
     <!-- Comment specific colors -->
     <attr name="rrCommentScoreCol" format="color" />
     <attr name="rrCommentTimeCol" format="color" />
+    
+    <!-- Load more comments colors -->
+    <attr name="rrLoadMoreCommentsTextCol" format="color" />
+    <attr name="rrLoadMoreCommentsArrowCol" format="color" />
 
 </resources>

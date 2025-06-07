@@ -73,19 +73,25 @@ public class LoadMoreCommentsView extends LinearLayout {
 		mIndentView.setLayoutParams(mIndentView.getLayoutParams());
 
 		final ImageView icon;
+		final int textColor;
 
 		{
 			final TypedArray appearance = context.obtainStyledAttributes(new int[] {
 					R.attr.rrIconForward,
 					R.attr.rrListItemBackgroundCol,
-					R.attr.rrListDividerCol});
+					R.attr.rrListDividerCol,
+					R.attr.rrLoadMoreCommentsTextCol,
+					R.attr.rrLoadMoreCommentsArrowCol});
 
 			icon = new ImageView(context);
 			icon.setImageDrawable(appearance.getDrawable(0));
+			icon.setColorFilter(appearance.getColor(4, General.COLOR_INVALID));
 
 			layout.setBackgroundColor(appearance.getColor(1, General.COLOR_INVALID));
 
 			divider.setBackgroundColor(appearance.getColor(2, General.COLOR_INVALID));
+
+			textColor = appearance.getColor(3, General.COLOR_INVALID);
 
 			appearance.recycle();
 		}
@@ -111,6 +117,7 @@ public class LoadMoreCommentsView extends LinearLayout {
 
 		mTitleView = new TextView(context);
 		mTitleView.setTextSize(13f);
+		mTitleView.setTextColor(textColor);
 		textLayout.addView(mTitleView);
 
 		setOnClickListener(v -> {
