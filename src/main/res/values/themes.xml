@@ -321,6 +321,8 @@
 		<item name="rrMainTextCol">#EBDBB2</item>
 		<item name="rrSubTextCol">#A89984</item>
 		<item name="rrMaterialButtonTextCol">#FBF1C7</item>
+		<item name="android:textColorPrimary">#EBDBB2</item>
+		<item name="android:textColorSecondary">#A89984</item>
 		<item name="android:textColorLink">#83A598</item>
 		<item name="android:windowBackground">#1D2021</item>
 		<item name="rrListItemBackgroundCol">#282828</item>

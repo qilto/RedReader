@@ -225,8 +225,8 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 						BetterSSB.BOLD
 								| BetterSSB.FOREGROUND_COLOR
 								| BetterSSB.BACKGROUND_COLOR,
-						Color.WHITE,
-						Color.rgb(50, 50, 50),
+						Color.rgb(251, 241, 199), // Gruvbox light0 #FBF1C7
+						Color.rgb(102, 92, 84), // Gruvbox dark_gray #665C54
 						1f);
 				postListDescSb.append("  ", 0);
 			}
@@ -239,9 +239,9 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 						BetterSSB.BOLD
 								| BetterSSB.FOREGROUND_COLOR
 								| BetterSSB.BACKGROUND_COLOR,
-						Color.WHITE,
-						Color.rgb(0, 170, 0),
-						1f); // TODO color?
+						Color.rgb(251, 241, 199), // Gruvbox light0 #FBF1C7
+						Color.rgb(152, 151, 26), // Gruvbox yellow #98971A
+						1f);
 				postListDescSb.append("  ", 0);
 			}
 		}
@@ -269,9 +269,9 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 						BetterSSB.BOLD
 								| BetterSSB.FOREGROUND_COLOR
 								| BetterSSB.BACKGROUND_COLOR,
-						Color.WHITE,
-						Color.RED,
-						1f); // TODO color?
+						Color.rgb(251, 241, 199), // Gruvbox light0 #FBF1C7
+						Color.rgb(204, 36, 29), // Gruvbox red #CC241D
+						1f);
 				postListDescSb.append("  ", 0);
 			}
 		}
@@ -373,10 +373,10 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 
 			if("moderator".equals(src.getDistinguished())) {
 				setBackgroundColour = true;
-				backgroundColour = Color.rgb(0, 170, 0);
+				backgroundColour = Color.rgb(152, 151, 26); // Gruvbox yellow #98971A
 			} else if("admin".equals(src.getDistinguished())) {
 				setBackgroundColour = true;
-				backgroundColour = Color.rgb(170, 0, 0);
+				backgroundColour = Color.rgb(204, 36, 29); // Gruvbox red #CC241D
 			} else {
 				setBackgroundColour = false;
 				backgroundColour = 0;
@@ -388,7 +388,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 						BetterSSB.BOLD
 								| BetterSSB.FOREGROUND_COLOR
 								| BetterSSB.BACKGROUND_COLOR,
-						Color.WHITE,
+						Color.rgb(251, 241, 199), // Gruvbox light0 #FBF1C7
 						backgroundColour,
 						1f);
 			} else {

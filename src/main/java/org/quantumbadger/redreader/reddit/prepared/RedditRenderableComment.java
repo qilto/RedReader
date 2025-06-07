@@ -142,21 +142,21 @@ public class RedditRenderableComment
 					&& !rawComment.getAuthor().getDecoded().equals("[deleted]")) {
 
 				setBackgroundColour = true;
-				backgroundColour = Color.rgb(0, 126, 168);
+				backgroundColour = Color.rgb(69, 133, 136); // Gruvbox aqua #458588
 
 			} else if("moderator".equals(rawComment.getDistinguished())) {
 				setBackgroundColour = true;
-				backgroundColour = Color.rgb(0, 170, 0);
+				backgroundColour = Color.rgb(152, 151, 26); // Gruvbox yellow #98971A
 
 			} else if("admin".equals(rawComment.getDistinguished())) {
 				setBackgroundColour = true;
-				backgroundColour = Color.rgb(170, 0, 0);
+				backgroundColour = Color.rgb(204, 36, 29); // Gruvbox red #CC241D
 
 			} else if(rawComment.getAuthor().getDecoded().equalsIgnoreCase(
 					mCurrentCanonicalUserName)) {
 				if (PrefsUtility.pref_appearance_highlight_own_username()){
 					setBackgroundColour = true;
-					backgroundColour = Color.rgb(0xEF, 0x6C, 0x00);
+					backgroundColour = Color.rgb(214, 93, 14); // Gruvbox orange #D65D0E
 				}
 			}
 
@@ -167,7 +167,7 @@ public class RedditRenderableComment
 						BetterSSB.BACKGROUND_COLOR
 								| BetterSSB.FOREGROUND_COLOR
 								| BetterSSB.BOLD,
-						Color.WHITE,
+						Color.rgb(251, 241, 199), // Gruvbox light0 #FBF1C7
 						backgroundColour,
 						1f);
 
