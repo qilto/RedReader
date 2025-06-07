@@ -137,5 +137,8 @@
     <!-- Load more comments colors -->
     <attr name="rrLoadMoreCommentsTextCol" format="color" />
     <attr name="rrLoadMoreCommentsArrowCol" format="color" />
+    
+    <!-- Text post content background -->
+    <attr name="rrPostSelfTextBackCol" format="color" />
 
 </resources>

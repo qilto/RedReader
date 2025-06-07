@@ -121,6 +121,9 @@
         <!-- Load more comments colors -->
         <item name="rrLoadMoreCommentsTextCol">#CCCCCC</item>
         <item name="rrLoadMoreCommentsArrowCol">#CCCCCC</item>
+        
+        <!-- Text post content background -->
+        <item name="rrPostSelfTextBackCol">?rrListItemBackgroundCol</item>
 
         <!-- Icons -->
 
@@ -238,6 +241,9 @@
 		<!-- Load more comments colors -->
 		<item name="rrLoadMoreCommentsTextCol">#AAAAAA</item>
 		<item name="rrLoadMoreCommentsArrowCol">#AAAAAA</item>
+		
+		<!-- Text post content background -->
+		<item name="rrPostSelfTextBackCol">?rrListItemBackgroundCol</item>
 
 	</style>
 
@@ -325,6 +331,9 @@
 		<!-- Load more comments colors -->
 		<item name="rrLoadMoreCommentsTextCol">#CCCCCC</item>
 		<item name="rrLoadMoreCommentsArrowCol">#CCCCCC</item>
+		
+		<!-- Text post content background -->
+		<item name="rrPostSelfTextBackCol">?rrListItemBackgroundCol</item>
 
 	</style>
 
@@ -434,6 +443,9 @@
         <!-- Load more comments colors -->
         <item name="rrLoadMoreCommentsTextCol">#333333</item>
         <item name="rrLoadMoreCommentsArrowCol">#333333</item>
+        
+        <!-- Text post content background -->
+        <item name="rrPostSelfTextBackCol">?rrListItemBackgroundCol</item>
 
         <!-- Post -->
 
@@ -630,6 +642,9 @@
         <!-- Load more comments colors -->
         <item name="rrLoadMoreCommentsTextCol">#FABD2F</item>
         <item name="rrLoadMoreCommentsArrowCol">#FE8019</item>
+        
+        <!-- Text post content background -->
+        <item name="rrPostSelfTextBackCol">#32302F</item>
 
         <!-- Icons -->
 

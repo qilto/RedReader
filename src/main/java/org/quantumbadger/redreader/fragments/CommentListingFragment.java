@@ -503,6 +503,13 @@ public class CommentListingFragment extends RRFragment
 
 				final int paddingPx = General.dpToPixels(activity, 10);
 				final FrameLayout paddingLayout = new FrameLayout(activity);
+				
+				// Set background color from theme
+				final TypedArray appearance = activity.obtainStyledAttributes(new int[] {
+						R.attr.rrPostSelfTextBackCol});
+				paddingLayout.setBackgroundColor(appearance.getColor(0, General.COLOR_INVALID));
+				appearance.recycle();
+				
 				final TextView collapsedView = new TextView(activity);
 				//noinspection SetTextI18n
 				collapsedView.setText("[ + ]  "
