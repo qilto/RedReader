@@ -300,13 +300,13 @@
 		<item name="rrListBackgroundCol">#1D2021</item>
 		<item name="rrIndentBackgroundCol">#282828</item>
 		<item name="rrIndentLineCol">#504945</item>
-		<item name="rrListDividerCol">#665C54</item>
+		<item name="rrListDividerCol">#504945</item>
 		<item name="rrListHeaderTextCol">#FABD2F</item>
-		<item name="rrListHeaderLineCol">#665C54</item>
+		<item name="rrListHeaderLineCol">#D79921</item>
 		<item name="rrListSubtitleCol">#D5C4A1</item>
-		<item name="rrAnnouncementBorderCol">#D5C4A1</item>
-		<item name="rrLoadingRingForegroundCol">#FBF1C7</item>
-		<item name="rrLoadingRingBackgroundCol">#3C3836</item>
+		<item name="rrAnnouncementBorderCol">#D65D0E</item>
+		<item name="rrLoadingRingForegroundCol">#8EC07C</item>
+		<item name="rrLoadingRingBackgroundCol">#504945</item>
 		<item name="rrQuickLinkButtonCol">#3C3836</item>
 		<item name="rrQuickLinkButtonColDisabled">#282828</item>
 		<item name="rrQuickLinkButtonColPressed">#504945</item>
@@ -327,17 +327,24 @@
 		<item name="rrPostFlingTextCol">#B8BB26</item>
 		<item name="rrFlairBackCol">#3C3836</item>
 		<item name="rrFlairTextCol">#D3869B</item>
-		<item name="rrGoldBackCol">#FABD2F</item>
+		<item name="rrGoldBackCol">#D79921</item>
 		<item name="rrGoldTextCol">#1D2021</item>
-		<item name="rrCrosspostBackCol">#458588</item>
+		<item name="rrCrosspostBackCol">#689D6A</item>
 		<item name="rrCrosspostTextCol">#FBF1C7</item>
-		<item name="rrPostToolbarCol">#1D2021</item>
+		<item name="rrPostToolbarCol">#282828</item>
 		<item name="rrCommentBodyCol">#EBDBB2</item>
 		<item name="rrCommentHeaderCol">#D5C4A1</item>
 		<item name="rrCommentHeaderBoldCol">#FBF1C7</item>
 		<item name="rrCommentHeaderAuthorCol">#FE8019</item>
 		<item name="rrCommentSpecificThreadHeaderBackCol">#B57614</item>
 		<item name="rrCommentSpecificThreadHeaderTextCol">#EBDBB2</item>
+		
+		<!-- Multi-level indent line colors using Gruvbox palette -->
+		<item name="rrIndentLineCol1">#83A598</item> <!-- bright_aqua -->
+		<item name="rrIndentLineCol2">#B8BB26</item> <!-- bright_green -->
+		<item name="rrIndentLineCol3">#FABD2F</item> <!-- bright_yellow -->
+		<item name="rrIndentLineCol4">#FB4934</item> <!-- bright_red -->
+		<item name="rrIndentLineCol5">#D3869B</item> <!-- bright_purple -->
 	</style>
 
 
