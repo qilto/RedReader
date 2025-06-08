@@ -180,7 +180,12 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 				R.attr.rrGoldTextCol,
 				R.attr.rrGoldBackCol,
 				R.attr.rrCrosspostTextCol,
-				R.attr.rrCrosspostBackCol
+				R.attr.rrCrosspostBackCol,
+				R.attr.rrPostAuthorCol,
+				R.attr.rrPostSubredditCol,
+				R.attr.rrPostScoreCol,
+				R.attr.rrPostTimeCol,
+				R.attr.rrPostDomainCol
 		});
 
 		final int boldCol;
@@ -198,6 +203,11 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 		final int rrGoldBackCol = appearance.getColor(6, 255);
 		final int rrCrosspostTextCol = appearance.getColor(7, 255);
 		final int rrCrosspostBackCol = appearance.getColor(8, 255);
+		final int rrPostAuthorCol = appearance.getColor(9, boldCol);
+		final int rrPostSubredditCol = appearance.getColor(10, boldCol);
+		final int rrPostScoreCol = appearance.getColor(11, boldCol);
+		final int rrPostTimeCol = appearance.getColor(12, boldCol);
+		final int rrPostDomainCol = appearance.getColor(13, boldCol);
 
 		appearance.recycle();
 
@@ -306,7 +316,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 			postListDescSb.append(
 					String.valueOf(score),
 					BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-					pointsCol,
+					rrPostScoreCol,
 					0,
 					1f);
 			postListDescSb.append(
@@ -356,7 +366,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 							R.string.time_ago,
 							mPostAgeUnits),
 					BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-					boldCol,
+					rrPostTimeCol,
 					0,
 					1f);
 			postListDescSb.append(" ", 0);
@@ -392,7 +402,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 				postListDescSb.append(
 						src.getAuthor(),
 						BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-						boldCol,
+						rrPostAuthorCol,
 						0,
 						1f);
 			}
@@ -406,7 +416,7 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 				postListDescSb.append(
 						src.getSubreddit(),
 						BetterSSB.BOLD | BetterSSB.FOREGROUND_COLOR,
-						boldCol,
+						rrPostSubredditCol,
 						0,
 						1f);
 				postListDescSb.append(" ", 0);
@@ -414,7 +424,12 @@ public final class RedditPreparedPost implements RedditChangeDataManager.Listene
 		}
 
 		if(mPostSubtitleItems.contains(PrefsUtility.AppearancePostSubtitleItem.DOMAIN)) {
-			postListDescSb.append("(" + src.getDomain() + ")", 0);
+			postListDescSb.append(
+					"(" + src.getDomain() + ")",
+					BetterSSB.FOREGROUND_COLOR,
+					rrPostDomainCol,
+					0,
+					1f);
 		}
 
 		return postListDescSb.get();

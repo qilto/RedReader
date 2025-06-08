@@ -104,7 +104,7 @@
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:gravity="center_vertical"
-						android:textColor="#909090"
+						android:textColor="?rrPostSubtitleCol"
 						android:paddingLeft="10dp"
 						android:paddingRight="10dp"
 						android:paddingTop="1dp"

@@ -57,6 +57,13 @@
 	<attr name="rrPostInlinePreviewDivider" format="color" />
 	<attr name="rrCrosspostBackCol" format="color" />
 	<attr name="rrCrosspostTextCol" format="color" />
+	
+	<!-- Post list specific text element colors -->
+	<attr name="rrPostAuthorCol" format="color" />
+	<attr name="rrPostSubredditCol" format="color" />
+	<attr name="rrPostScoreCol" format="color" />
+	<attr name="rrPostTimeCol" format="color" />
+	<attr name="rrPostDomainCol" format="color" />
 
     <attr name="rrCommentBodyCol" format="color" />
     <attr name="rrCommentHeaderCol" format="color" />

@@ -617,6 +617,13 @@
 
         <item name="rrPostToolbarCol">#32302F</item>
 
+        <!-- Post list specific text element colors -->
+        <item name="rrPostAuthorCol">#FB4934</item>
+        <item name="rrPostSubredditCol">#FABD2F</item>
+        <item name="rrPostScoreCol">#B8BB26</item>
+        <item name="rrPostTimeCol">#8EC07C</item>
+        <item name="rrPostDomainCol">#D3869B</item>
+
         <item name="rrThemedButtonSelector">@drawable/rr_themed_button_selector_dark</item>
 
         <!-- Comment -->
