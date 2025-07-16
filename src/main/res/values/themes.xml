@@ -569,6 +569,13 @@
 
         <item name="rrIndentBackgroundCol">#1D2021</item>
         <item name="rrIndentLineCol">#3C3836</item>
+        
+        <!-- Comment indentation line colors (Gruvbox bright colors) -->
+        <item name="rrIndentLineCol1">#83A598</item> <!-- bright_blue -->
+        <item name="rrIndentLineCol2">#B8BB26</item> <!-- bright_green -->
+        <item name="rrIndentLineCol3">#FABD2F</item> <!-- bright_yellow -->
+        <item name="rrIndentLineCol4">#FB4934</item> <!-- bright_red -->
+        <item name="rrIndentLineCol5">#D3869B</item> <!-- bright_purple -->
 
         <item name="rrListDividerCol">#504945</item>
         <item name="rrListHeaderTextCol">#FABD2F</item>
@@ -596,7 +603,7 @@
 
         <!-- Post -->
 
-        <item name="rrPostTitleCol">#EBDBB2</item>
+        <item name="rrPostTitleCol">#83A598</item>
         <item name="rrPostTitleReadCol">#928374</item>
         <item name="rrPostSubtitleCol">#A89984</item>
         <item name="rrPostSubtitleBoldCol">#D5C4A1</item>
@@ -604,12 +611,12 @@
         <item name="rrPostSubtitleDownvoteCol">#83A598</item>
         <item name="rrPostCommentsButtonBackCol">#504945</item>
         <item name="rrPostCommentsButtonHighlightCol">#665C54</item>
-        <item name="rrPostCommentsButtonTextCol">#8EC07C</item>
+        <item name="rrPostCommentsButtonTextCol">#EBDBB2</item>
         <item name="rrPostThumbnailBackground">#282828</item>
         <item name="rrPostInlinePreviewDivider">#3C3836</item>
         <item name="rrPostFlingTextCol">#FABD2F</item>
         <item name="rrFlairBackCol">#665C54</item>
-        <item name="rrFlairTextCol">#D3869B</item>
+        <item name="rrFlairTextCol">#EBDBB2</item>
         <item name="rrGoldBackCol">#FABD2F</item>
         <item name="rrGoldTextCol">#1D2021</item>
         <item name="rrCrosspostBackCol">#689D6A</item>
@@ -618,7 +625,7 @@
         <item name="rrPostToolbarCol">#32302F</item>
 
         <!-- Post list specific text element colors -->
-        <item name="rrPostAuthorCol">#FB4934</item>
+        <item name="rrPostAuthorCol">#A89984</item>
         <item name="rrPostSubredditCol">#FABD2F</item>
         <item name="rrPostScoreCol">#B8BB26</item>
         <item name="rrPostTimeCol">#8EC07C</item>
@@ -631,7 +638,7 @@
         <item name="rrCommentBodyCol">#EBDBB2</item>
         <item name="rrCommentHeaderCol">#BDAE93</item>
         <item name="rrCommentHeaderBoldCol">#D5C4A1</item>
-        <item name="rrCommentHeaderAuthorCol">#FE8019</item>
+        <item name="rrCommentHeaderAuthorCol">#BDAE93</item>
         <item name="rrCommentSpecificThreadHeaderBackCol">#D79921</item>
         <item name="rrCommentSpecificThreadHeaderTextCol">#1D2021</item>
         
@@ -647,8 +654,8 @@
         <item name="rrCommentTimeCol">#D3869B</item>
         
         <!-- Load more comments colors -->
-        <item name="rrLoadMoreCommentsTextCol">#FABD2F</item>
-        <item name="rrLoadMoreCommentsArrowCol">#FE8019</item>
+        <item name="rrLoadMoreCommentsTextCol">#A89984</item>
+        <item name="rrLoadMoreCommentsArrowCol">#928374</item>
         
         <!-- Text post content background -->
         <item name="rrPostSelfTextBackCol">#32302F</item>
