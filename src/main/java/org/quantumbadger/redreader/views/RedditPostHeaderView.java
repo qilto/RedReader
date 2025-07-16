@@ -37,6 +37,7 @@ import org.quantumbadger.redreader.common.PrefsUtility;
 import org.quantumbadger.redreader.reddit.api.RedditPostActions;
 import org.quantumbadger.redreader.reddit.prepared.RedditChangeDataManager;
 import org.quantumbadger.redreader.reddit.prepared.RedditPreparedPost;
+import org.quantumbadger.redreader.settings.types.AppearanceTheme;
 
 public class RedditPostHeaderView extends LinearLayout {
 
@@ -76,7 +77,11 @@ public class RedditPostHeaderView extends LinearLayout {
 
 		final TextView title = new TextView(activity);
 		title.setTextSize(19.0f * titleFontScale);
-		title.setTypeface(Fonts.getRobotoLightOrAlternative());
+		if (PrefsUtility.appearance_theme() == AppearanceTheme.GRUVBOX) {
+			title.setTypeface(Fonts.getRobotoLightOrAlternative(), android.graphics.Typeface.BOLD);
+		} else {
+			title.setTypeface(Fonts.getRobotoLightOrAlternative());
+		}
 		title.setText(post.src.getTitle());
 		title.setContentDescription(post.buildAccessibilityTitle(activity, true));
 		{
