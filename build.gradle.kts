@@ -63,6 +63,7 @@ dependencies {
 	implementation(libs.androidx.compose.constraintlayout)
 
 	testImplementation(libs.junit)
+	testImplementation(libs.robolectric)
 
 	androidTestImplementation(libs.androidx.test.core)
 	androidTestImplementation(libs.androidx.test.espresso.core)
@@ -80,8 +81,8 @@ android {
 		applicationId = "org.quantumbadger.redreader"
 		minSdk = libs.versions.sdk.min.get().toInt()
 		targetSdk = libs.versions.sdk.target.get().toInt()
-		versionCode = 114
-		versionName = "1.24.1"
+		versionCode = 115
+		versionName = "1.25"
 
 		vectorDrawables.generatedDensities("mdpi", "hdpi", "xhdpi", "xxhdpi", "xxxhdpi")
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
